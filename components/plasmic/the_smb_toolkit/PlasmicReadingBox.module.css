@@ -1,0 +1,69 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 265px;
+  height: 100%;
+  max-width: 100%;
+  background: #ffffff;
+  position: relative;
+  min-height: 300px;
+  cursor: pointer;
+  border-style: none;
+}
+.freeBox__rcX43 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  height: 207px;
+  width: 265px;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.freeBox__rGfKx {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.text__bSt2B {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-weight: 900;
+  font-size: 1.3em;
+  min-width: 0;
+}
+.text__zs3M {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-weight: 300;
+  font-size: 0.8em;
+  min-width: 0;
+}

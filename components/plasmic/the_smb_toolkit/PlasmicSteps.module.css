@@ -1,0 +1,44 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  position: relative;
+  min-width: 0;
+  padding: 8px;
+}
+.text___8PeZx {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  padding-right: 8px;
+  min-width: 0;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.text__wEpe {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  padding-left: 16px;
+  min-width: 0;
+}

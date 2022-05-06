@@ -1,0 +1,151 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  background: #ffe9e3;
+  position: relative;
+  padding: 2em;
+}
+.rootunnamedVariant {
+  background: #dee5fa;
+}
+.rootunnamedVariant2 {
+  background: #839dec;
+}
+.rootunnamedVariant3 {
+  background: #f67958;
+}
+.rootunnamedVariant4 {
+  background: #cc933e;
+}
+.rootunnamedVariant5 {
+  background: #f084b4;
+}
+.freeBox___75IBj {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetChildren {
+  font-size: 24px;
+  font-weight: 700;
+  color: #8aa7ff;
+  line-height: 1.2;
+}
+.slotTargetChildrenunnamedVariant2 {
+  color: #ffe9c0;
+}
+.slotTargetChildrenunnamedVariant3 {
+  color: #ffe9c0;
+}
+.slotTargetChildrenunnamedVariant4 {
+  color: #ffe9c0;
+}
+.slotTargetChildrenunnamedVariant5 {
+  color: #ffe9c0;
+}
+.freeBox__ajoCz {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__rcvll {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  align-items: flex-end;
+  justify-content: center;
+}
+.slotTargetSlot {
+  font-size: 10em;
+  font-weight: 900;
+  color: #8aa7ff;
+  line-height: 1;
+}
+.slotTargetSlotunnamedVariant2 {
+  color: #ffe9c0;
+}
+.slotTargetSlotunnamedVariant3 {
+  color: #ffe9c0;
+}
+.slotTargetSlotunnamedVariant4 {
+  color: #ffe9c0;
+}
+.slotTargetSlotunnamedVariant5 {
+  color: #ffe9c0;
+}
+.freeBox__th3RG {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.freeBoxunnamedVariant__th3RG6M9Xz {
+  display: none;
+}
+.slotTargetSlot3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #8aa7ff;
+}
+.slotTargetSlot3unnamedVariant2 {
+  color: #ffe9c0;
+}
+.slotTargetSlot3unnamedVariant3 {
+  color: #ffe9c0;
+}
+.slotTargetSlot3unnamedVariant4 {
+  color: #ffe9c0;
+}
+.slotTargetSlot3unnamedVariant5 {
+  color: #ffe9c0;
+}
+.freeBox___7V8JZ {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSlot2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #8aa7ff;
+  line-height: 1.2;
+}
+.slotTargetSlot2unnamedVariant2 {
+  color: #ffe9c0;
+}
+.slotTargetSlot2unnamedVariant3 {
+  color: #ffe9c0;
+}
+.slotTargetSlot2unnamedVariant4 {
+  color: #ffe9c0;
+}
+.slotTargetSlot2unnamedVariant5 {
+  color: #ffe9c0;
+}

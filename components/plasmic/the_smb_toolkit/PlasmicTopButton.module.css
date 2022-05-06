@@ -1,0 +1,29 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  background: #839dec;
+  position: relative;
+  border-radius: 8px;
+  padding: 8px;
+}
+.rootunnamedVariant {
+  background: #3966ec;
+}
+.freeBox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSlot3 {
+  font-size: 11px;
+  color: #ffffff;
+}

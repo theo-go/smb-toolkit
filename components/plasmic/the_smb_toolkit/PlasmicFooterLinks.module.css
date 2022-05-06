@@ -1,0 +1,19 @@
+.root {
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+}
+.link {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: #3b3b3b;
+  font-size: 12px;
+  font-weight: 700;
+}
+.slotTargetChildren {
+  font-weight: 700;
+}

@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  padding: 8px;
+}
+.freeBox__nmY0K {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetChildren {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+}
+.freeBox__chJ1R {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetSlot {
+  text-align: center;
+}
