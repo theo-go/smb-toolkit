@@ -38,6 +38,9 @@
 .freeBoxunnamedVariant3__pZPkHxeCxk {
   background: #f4b8a8;
 }
+.root:hover .freeBox__pZPkH {
+  background: #444444;
+}
 .img {
   position: relative;
   object-fit: contain;

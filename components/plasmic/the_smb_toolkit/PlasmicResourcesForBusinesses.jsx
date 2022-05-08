@@ -17,9 +17,8 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: MfRpGDkJ8b4/component
 import { Input } from "antd"; // plasmic-import: tO9wrxr8Nbb/codeComponent
-import { Select } from "antd"; // plasmic-import: 2YpGIhkzkpc/codeComponent
-import { Option } from "rc-select"; // plasmic-import: YRr0RPAdEj/codeComponent
 import ReadingBox from "../../ReadingBox"; // plasmic-import: -2Xh8VfZof/component
+import Footer from "../../Footer"; // plasmic-import: VbkWmUKrYAc/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_the_smb_toolkit.module.css"; // plasmic-import: vZXZgeU1YqYWghemcQX2Q1/projectcss
 import sty from "./PlasmicResourcesForBusinesses.module.css"; // plasmic-import: 2YFxA6hcKs/css
@@ -61,89 +60,81 @@ function PlasmicResourcesForBusinesses__RenderFunc(props) {
           />
 
           <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
+            data-plasmic-name={"top"}
+            data-plasmic-override={overrides.top}
+            className={classNames(projectcss.all, sty.top)}
           >
-            <div
-              data-plasmic-name={"searchStack"}
-              data-plasmic-override={overrides.searchStack}
-              className={classNames(projectcss.all, sty.searchStack)}
+            <h2
+              data-plasmic-name={"h2"}
+              data-plasmic-override={overrides.h2}
+              className={classNames(
+                projectcss.all,
+                projectcss.h2,
+                projectcss.__wab_text,
+                sty.h2
+              )}
             >
-              <SearchsvgIcon
-                data-plasmic-name={"svg"}
-                data-plasmic-override={overrides.svg}
-                className={classNames(projectcss.all, sty.svg)}
-                role={"img"}
-              />
-
-              <Input
-                data-plasmic-name={"searchBar"}
-                data-plasmic-override={overrides.searchBar}
-                allowClear={false}
-                bordered={true}
-                className={classNames("__wab_instance", sty.searchBar)}
-                maxLength={200}
-              />
-
-              <Select
-                data-plasmic-name={"selectDropdown"}
-                data-plasmic-override={overrides.selectDropdown}
-                className={classNames("__wab_instance", sty.selectDropdown)}
-                placeholder={
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__zIam5
-                    )}
-                  >
-                    {"Select"}
-                  </div>
-                }
-              >
-                <Option
-                  className={classNames(
-                    "__wab_instance",
-                    sty.antdOption__vbrYy
-                  )}
-                  value={"Option"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fkmwQ
-                    )}
-                  >
-                    {"Option"}
-                  </div>
-                </Option>
-              </Select>
-            </div>
+              {"101 Resources for Small Businesses"}
+            </h2>
           </div>
 
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"resources"}
-            data-plasmic-override={overrides.resources}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.resources)}
-          >
-            <div className={classNames(projectcss.all, sty.column___9ENe)}>
-              <ReadingBox
-                data-plasmic-name={"readingBox"}
-                data-plasmic-override={overrides.readingBox}
-                className={classNames("__wab_instance", sty.readingBox)}
-              />
-            </div>
+          <div className={classNames(projectcss.all, sty.freeBox___6OpaA)}>
+            {true ? (
+              <div
+                data-plasmic-name={"searchStack"}
+                data-plasmic-override={overrides.searchStack}
+                className={classNames(projectcss.all, sty.searchStack)}
+              >
+                <SearchsvgIcon
+                  data-plasmic-name={"svg"}
+                  data-plasmic-override={overrides.svg}
+                  className={classNames(projectcss.all, sty.svg)}
+                  role={"img"}
+                />
 
-            <div className={classNames(projectcss.all, sty.column__cg4B5)} />
+                <Input
+                  data-plasmic-name={"searchBar"}
+                  data-plasmic-override={overrides.searchBar}
+                  allowClear={false}
+                  bordered={true}
+                  className={classNames("__wab_instance", sty.searchBar)}
+                  maxLength={200}
+                />
+              </div>
+            ) : null}
+          </div>
 
-            <div className={classNames(projectcss.all, sty.column___1Q8Pp)} />
+          <div className={classNames(projectcss.all, sty.freeBox__n0Gvc)}>
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"resources"}
+              data-plasmic-override={overrides.resources}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.resources)}
+            >
+              <div className={classNames(projectcss.all, sty.column___9ENe)}>
+                <ReadingBox
+                  data-plasmic-name={"readingBox"}
+                  data-plasmic-override={overrides.readingBox}
+                  className={classNames("__wab_instance", sty.readingBox)}
+                />
+              </div>
 
-            <div className={classNames(projectcss.all, sty.column__qyjxw)} />
-          </p.Stack>
+              <div className={classNames(projectcss.all, sty.column__cg4B5)} />
+
+              <div className={classNames(projectcss.all, sty.column___1Q8Pp)} />
+
+              <div className={classNames(projectcss.all, sty.column__qyjxw)} />
+            </p.Stack>
+          </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox___8HyRy)}>
+            <Footer
+              data-plasmic-name={"footer"}
+              data-plasmic-override={overrides.footer}
+              className={classNames("__wab_instance", sty.footer)}
+            />
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -154,23 +145,25 @@ const PlasmicDescendants = {
   root: [
     "root",
     "navbar",
-    "freeBox",
+    "top",
+    "h2",
     "searchStack",
     "svg",
     "searchBar",
-    "selectDropdown",
     "resources",
-    "readingBox"
+    "readingBox",
+    "footer"
   ],
 
   navbar: ["navbar"],
-  freeBox: ["freeBox", "searchStack", "svg", "searchBar", "selectDropdown"],
-  searchStack: ["searchStack", "svg", "searchBar", "selectDropdown"],
+  top: ["top", "h2"],
+  h2: ["h2"],
+  searchStack: ["searchStack", "svg", "searchBar"],
   svg: ["svg"],
   searchBar: ["searchBar"],
-  selectDropdown: ["selectDropdown"],
   resources: ["resources", "readingBox"],
-  readingBox: ["readingBox"]
+  readingBox: ["readingBox"],
+  footer: ["footer"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -203,13 +196,14 @@ export const PlasmicResourcesForBusinesses = Object.assign(
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
-    freeBox: makeNodeComponent("freeBox"),
+    top: makeNodeComponent("top"),
+    h2: makeNodeComponent("h2"),
     searchStack: makeNodeComponent("searchStack"),
     svg: makeNodeComponent("svg"),
     searchBar: makeNodeComponent("searchBar"),
-    selectDropdown: makeNodeComponent("selectDropdown"),
     resources: makeNodeComponent("resources"),
     readingBox: makeNodeComponent("readingBox"),
+    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicResourcesForBusinesses
     internalVariantProps: PlasmicResourcesForBusinesses__VariantProps,
     internalArgProps: PlasmicResourcesForBusinesses__ArgProps

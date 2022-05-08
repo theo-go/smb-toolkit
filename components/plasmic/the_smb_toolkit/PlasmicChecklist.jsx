@@ -9,6 +9,7 @@
 // Plasmic Project: vZXZgeU1YqYWghemcQX2Q1
 // Component: uN9VsJ5tvm
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
   hasVariant,
@@ -77,14 +78,45 @@ function PlasmicChecklist__RenderFunc(props) {
                   sty.text__yYsQs
                 )}
               >
-                {"Grow your Business"}
+                {"The tools to grow your business"}
               </div>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__loU4D
+                )}
+              >
+                {
+                  "A free checklist with all the answers — and none of the fluff."
+                }
+              </div>
+
+              <p.PlasmicLink
+                data-plasmic-name={"httpscodaiostackInputtheSmbChecklist3"}
+                data-plasmic-override={
+                  overrides.httpscodaiostackInputtheSmbChecklist3
+                }
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.httpscodaiostackInputtheSmbChecklist3
+                )}
+                component={Link}
+                platform={"nextjs"}
+              >
+                {"Access Checklist Here 🚀 "}
+              </p.PlasmicLink>
             </div>
 
             <p.Stack
               as={"div"}
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
               hasGap={true}
-              className={classNames(projectcss.all, sty.columns__kVln)}
+              className={classNames(projectcss.all, sty.columns)}
             >
               <div className={classNames(projectcss.all, sty.column__aiGp)}>
                 <div
@@ -109,7 +141,7 @@ function PlasmicChecklist__RenderFunc(props) {
                           sty.h3
                         )}
                       >
-                        {"What you get."}
+                        {"The only list of resources you'll need"}
                       </h3>
                       <React.Fragment>{""}</React.Fragment>
                     </React.Fragment>
@@ -141,7 +173,7 @@ function PlasmicChecklist__RenderFunc(props) {
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
                       >
-                        {"Learn how to scale your business"}
+                        {"A concise guide to growing your business"}
                       </span>
                       <React.Fragment>{""}</React.Fragment>
                     </React.Fragment>
@@ -157,7 +189,7 @@ function PlasmicChecklist__RenderFunc(props) {
                 >
                   {hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "Enter some text"
-                    : "Get access to a checklist of everything you need to know in order to grow your business."}
+                    : "We know it's not easy handling everything by yourself. This checklist/tookit is here to help you keep your head on straight."}
                 </div>
 
                 <div
@@ -176,21 +208,25 @@ function PlasmicChecklist__RenderFunc(props) {
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
                       >
-                        {"Access to open source resouces"}
+                        {"A list of additional resources"}
                       </span>
                       <React.Fragment>{""}</React.Fragment>
                     </React.Fragment>
                   )}
                 </div>
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__snc2K
-                  )}
-                >
-                  {"Get access to no-nonsense real world advice."}
+                <div className={classNames(projectcss.all, sty.freeBox__lZkHe)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__snc2K
+                    )}
+                  >
+                    {
+                      "We don't have all the answers, and there are so many great resources online. So we've tried our best to consolidate some of the best ones :)"
+                    }
+                  </div>
                 </div>
 
                 <div
@@ -209,32 +245,58 @@ function PlasmicChecklist__RenderFunc(props) {
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
                       >
-                        {"Access to open source resouces"}
+                        {"More questions? A group of mentors."}
                       </span>
                       <React.Fragment>{""}</React.Fragment>
                     </React.Fragment>
                   )}
                 </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___77V4E
+                  )}
+                >
+                  {
+                    "And if we haven't answered something that's really bugging you in your business, shoot us a message and we'll message you back asap!"
+                  }
+                </div>
               </div>
 
               <div className={classNames(projectcss.all, sty.column__a6JuX)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__nBKhj)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"600px"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/the_smb_toolkit/images/fullFrame1Png.png",
-                    fullWidth: 972,
-                    fullHeight: 636,
-                    aspectRatio: undefined
-                  }}
-                />
+                <p.PlasmicLink
+                  data-plasmic-name={"httpscodaiostackInputtheSmbChecklist"}
+                  data-plasmic-override={
+                    overrides.httpscodaiostackInputtheSmbChecklist
+                  }
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.httpscodaiostackInputtheSmbChecklist
+                  )}
+                  component={Link}
+                  platform={"nextjs"}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__nBKhj)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"600px"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/the_smb_toolkit/images/fullFrame1Png.png",
+                      fullWidth: 972,
+                      fullHeight: 636,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </p.PlasmicLink>
               </div>
             </p.Stack>
           </div>
@@ -251,7 +313,7 @@ function PlasmicChecklist__RenderFunc(props) {
                 sty.text___1XgPq
               )}
             >
-              {"Checklist"}
+              {"The Checklist (Part 1 😊)"}
             </div>
 
             <div className={classNames(projectcss.all, sty.freeBox__lzeUs)}>
@@ -259,116 +321,104 @@ function PlasmicChecklist__RenderFunc(props) {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__oonOe)}
+                  className={classNames(projectcss.all, sty.freeBox__qnDnf)}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__ts3Gu)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"280px"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"300px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/the_smb_toolkit/images/marketingAllpng.png",
+                      fullWidth: 379,
+                      fullHeight: 307,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__lPx9Q)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"280px"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"300px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/the_smb_toolkit/images/legalAllpng2.png",
+                      fullWidth: 379,
+                      fullHeight: 307,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__emtTu)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"280px"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"300px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/the_smb_toolkit/images/accessCapitalAllpng.png",
+                      fullWidth: 376,
+                      fullHeight: 307,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </p.Stack>
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___6Uajn)}
                 >
                   <div
-                    className={classNames(projectcss.all, sty.column__ftlu6)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___1HTdo
+                    )}
                   >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__qnDnf)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__ts3Gu)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"280px"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"300px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/the_smb_toolkit/images/marketingAllpng.png",
-                          fullWidth: 379,
-                          fullHeight: 307,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__lPx9Q)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"280px"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"300px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/the_smb_toolkit/images/legalAllpng2.png",
-                          fullWidth: 379,
-                          fullHeight: 307,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__emtTu)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"280px"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"300px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/the_smb_toolkit/images/accessCapitalAllpng.png",
-                          fullWidth: 376,
-                          fullHeight: 307,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </p.Stack>
+                    <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {
+                          "Get the toolkit you need to take your business to the next level!"
+                        }
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
+                    </React.Fragment>
                   </div>
 
-                  <div
-                    className={classNames(projectcss.all, sty.column__tLa1Y)}
+                  <p.PlasmicLink
+                    data-plasmic-name={"httpscodaiostackInputtheSmbChecklist2"}
+                    data-plasmic-override={
+                      overrides.httpscodaiostackInputtheSmbChecklist2
+                    }
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.httpscodaiostackInputtheSmbChecklist2
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___6Uajn
-                      )}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___1HTdo
-                        )}
-                      >
-                        <React.Fragment>
-                          <React.Fragment>{""}</React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ fontWeight: 700 }}
-                          >
-                            {
-                              "Get the toolkit you need to take your business to the next level!"
-                            }
-                          </span>
-                          <React.Fragment>{""}</React.Fragment>
-                        </React.Fragment>
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__i78IF
-                        )}
-                      >
-                        {"Access Checklist Here 🚀 "}
-                      </div>
-                    </div>
-                  </div>
-                </p.Stack>
+                    {"Access the Checklist Here 🚀 "}
+                  </p.PlasmicLink>
+                </div>
               </div>
             </div>
           </div>
@@ -391,11 +441,44 @@ function PlasmicChecklist__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "hero", "h3", "checklist", "cta", "footer"],
+  root: [
+    "root",
+    "navbar",
+    "hero",
+    "httpscodaiostackInputtheSmbChecklist3",
+    "columns",
+    "h3",
+    "httpscodaiostackInputtheSmbChecklist",
+    "checklist",
+    "httpscodaiostackInputtheSmbChecklist2",
+    "cta",
+    "footer"
+  ],
+
   navbar: ["navbar"],
-  hero: ["hero", "h3"],
+  hero: [
+    "hero",
+    "httpscodaiostackInputtheSmbChecklist3",
+    "columns",
+    "h3",
+    "httpscodaiostackInputtheSmbChecklist"
+  ],
+
+  httpscodaiostackInputtheSmbChecklist3: [
+    "httpscodaiostackInputtheSmbChecklist3"
+  ],
+
+  columns: ["columns", "h3", "httpscodaiostackInputtheSmbChecklist"],
   h3: ["h3"],
-  checklist: ["checklist"],
+  httpscodaiostackInputtheSmbChecklist: [
+    "httpscodaiostackInputtheSmbChecklist"
+  ],
+
+  checklist: ["checklist", "httpscodaiostackInputtheSmbChecklist2"],
+  httpscodaiostackInputtheSmbChecklist2: [
+    "httpscodaiostackInputtheSmbChecklist2"
+  ],
+
   cta: ["cta"],
   footer: ["footer"]
 };
@@ -431,8 +514,21 @@ export const PlasmicChecklist = Object.assign(
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     hero: makeNodeComponent("hero"),
+    httpscodaiostackInputtheSmbChecklist3: makeNodeComponent(
+      "httpscodaiostackInputtheSmbChecklist3"
+    ),
+
+    columns: makeNodeComponent("columns"),
     h3: makeNodeComponent("h3"),
+    httpscodaiostackInputtheSmbChecklist: makeNodeComponent(
+      "httpscodaiostackInputtheSmbChecklist"
+    ),
+
     checklist: makeNodeComponent("checklist"),
+    httpscodaiostackInputtheSmbChecklist2: makeNodeComponent(
+      "httpscodaiostackInputtheSmbChecklist2"
+    ),
+
     cta: makeNodeComponent("cta"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicChecklist

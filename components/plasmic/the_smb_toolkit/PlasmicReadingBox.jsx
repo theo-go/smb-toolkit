@@ -9,6 +9,7 @@
 // Plasmic Project: vZXZgeU1YqYWghemcQX2Q1
 // Component: -2Xh8VfZof
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
   classNames,
@@ -21,24 +22,28 @@ import sty from "./PlasmicReadingBox.module.css"; // plasmic-import: -2Xh8VfZof/
 
 export const PlasmicReadingBox__VariantProps = new Array();
 
-export const PlasmicReadingBox__ArgProps = new Array();
+export const PlasmicReadingBox__ArgProps = new Array("title", "image", "link");
 
 function PlasmicReadingBox__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
   const $props = props.args;
   return (
-    <div
-      data-plasmic-name={"root"}
-      data-plasmic-override={overrides.root}
+    <p.PlasmicLink
+      data-plasmic-name={"link"}
+      data-plasmic-override={overrides.link}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        sty.root
+        sty.link
       )}
+      component={Link}
+      href={args.link}
+      platform={"nextjs"}
     >
       <div className={classNames(projectcss.all, sty.freeBox__rcX43)}>
         <p.PlasmicImg
@@ -53,43 +58,48 @@ function PlasmicReadingBox__RenderFunc(props) {
           displayMinWidth={"0"}
           displayWidth={"265px"}
           loading={"lazy"}
-          src={{
-            src: "/plasmic/the_smb_toolkit/images/image.svg",
-            fullWidth: 150,
-            fullHeight: 150,
-            aspectRatio: 1
-          }}
+          src={
+            args.image !== undefined
+              ? args.image
+              : {
+                  src: "/plasmic/the_smb_toolkit/images/photo202204301431312Png.png",
+                  fullWidth: 510,
+                  fullHeight: 512,
+                  aspectRatio: undefined
+                }
+          }
         />
       </div>
 
       <div className={classNames(projectcss.all, sty.freeBox__rGfKx)}>
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__bSt2B
-          )}
-        >
-          {"Title"}
+        <div className={classNames(projectcss.all, sty.freeBox__bSt2B)}>
+          {p.renderPlasmicSlot({
+            defaultContents: "Resources loading :)",
+            value: args.title,
+            className: classNames(sty.slotTargetTitle)
+          })}
         </div>
 
         <div
+          data-plasmic-name={"description"}
+          data-plasmic-override={overrides.description}
           className={classNames(
             projectcss.all,
             projectcss.__wab_text,
-            sty.text__zs3M
+            sty.description
           )}
         >
-          {"Title"}
+          {"Loading..."}
         </div>
       </div>
-    </div>
+    </p.PlasmicLink>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img"],
-  img: ["img"]
+  link: ["link", "img", "description"],
+  img: ["img"],
+  description: ["description"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -108,7 +118,7 @@ function makeNodeComponent(nodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "root") {
+  if (nodeName === "link") {
     func.displayName = "PlasmicReadingBox";
   } else {
     func.displayName = `PlasmicReadingBox.${nodeName}`;
@@ -118,10 +128,11 @@ function makeNodeComponent(nodeName) {
 
 export const PlasmicReadingBox = Object.assign(
   // Top-level PlasmicReadingBox renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent("link"),
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
+    description: makeNodeComponent("description"),
     // Metadata about props expected for PlasmicReadingBox
     internalVariantProps: PlasmicReadingBox__VariantProps,
     internalArgProps: PlasmicReadingBox__ArgProps

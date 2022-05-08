@@ -29,7 +29,7 @@
   height: auto;
   max-width: 100%;
   min-height: 80vh;
-  margin-top: 40px;
+  margin-top: 69px;
   min-width: 0;
   padding: 8px;
 }
@@ -57,7 +57,7 @@
 .freeBox__lD63W {
   display: flex;
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -67,6 +67,16 @@
   padding: 8px;
 }
 .text__bhDaz {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 13px;
+  min-width: 0;
+}
+.text__iNlQa {
   position: relative;
   width: 100%;
   height: auto;
@@ -90,7 +100,9 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  width: 900px;
+  max-height: 90%;
+  height: 600px;
+  flex-shrink: 0;
 }
 .img__nrFzk > picture > img {
   object-fit: contain;
@@ -264,8 +276,10 @@
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-size: 60px;
+  font-size: 24px;
   text-align: left;
+  font-weight: 900;
+  margin-bottom: 15px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -297,8 +311,7 @@
     min-width: 0;
   }
 }
-.columns__jefIs {
-  display: flex;
+.facts {
   position: relative;
   width: 1100px;
   height: auto;
@@ -306,17 +319,18 @@
   flex-shrink: 1;
   flex-direction: row;
   flex-wrap: nowrap;
+  display: none;
   padding: 8px;
   margin: 50px;
 }
-.columns__jefIs > :nth-child(2n + 1) {
+.facts > :nth-child(2n + 1) {
   width: calc((100% - 2 * 0px) * 4 / 12);
 }
-.columns__jefIs > :nth-child(2n + 2) {
+.facts > :nth-child(2n + 2) {
   width: calc((100% - 2 * 0px) * 8 / 12);
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .columns__jefIs {
+  .facts {
     width: 100%;
     height: auto;
     flex-direction: row;
@@ -325,7 +339,7 @@
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .columns__jefIs > :nth-child(1n + 1) {
+  .facts > :nth-child(1n + 1) {
     width: calc((100% - 1 * 0px) * 12 / 12);
   }
 }
@@ -346,8 +360,9 @@
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-size: 60px;
+  font-size: 24px;
   text-align: left;
+  font-weight: 900;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -360,6 +375,15 @@
     font-size: 60px;
     min-width: 0;
   }
+}
+.text__bonl {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 0;
 }
 .column__dLsLv {
   display: flex;
@@ -397,7 +421,6 @@
   margin: 20px;
 }
 .freeBox___3Zyx5 {
-  display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -406,6 +429,8 @@
   height: auto;
   max-width: 100%;
   align-self: center;
+  margin-top: 80px;
+  display: none;
   padding: 8px;
 }
 .text__v1Hui {
@@ -418,7 +443,8 @@
   min-width: 0;
 }
 .h2__g0Afl {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 .img__teyKb {
   position: relative;
@@ -444,8 +470,7 @@
     align-self: center;
   }
 }
-.freeBox__ja1Dw {
-  display: flex;
+.factoids {
   position: relative;
   flex-direction: row;
   align-items: stretch;
@@ -456,6 +481,7 @@
   flex-wrap: wrap;
   align-content: flex-start;
   min-width: 0;
+  display: none;
   padding: 8px;
 }
 .dataOnBox__o6Ztm:global(.__wab_instance) {
@@ -474,53 +500,6 @@
   position: relative;
   flex-shrink: 0;
 }
-.freeBox___5RZnw {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 1100px;
-  height: auto;
-  max-width: 100%;
-  padding: 8px;
-  margin: 50px;
-}
-.text___0Dprc {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 979px;
-  font-size: 60px;
-  text-align: left;
-  min-width: 0;
-}
-.h2__afIpa {
-  text-align: center;
-  margin: 0px 0px 10px;
-}
-.img__aZmHu {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  align-self: flex-start;
-  width: 200px;
-  height: 200px;
-  margin-left: 16px;
-  margin-right: 0px;
-  flex-shrink: 0;
-}
-.img__aZmHu > picture > img {
-  object-fit: cover;
-}
-.img__aZmHu > .__wab_img-spacer > img {
-  object-fit: cover;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .img__aZmHu {
-    align-self: center;
-  }
-}
 .freeBox__jhzYe {
   display: flex;
   position: relative;
@@ -529,7 +508,7 @@
   justify-content: flex-start;
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 1100px;
   min-width: 0;
   padding: 8px;
 }
@@ -546,10 +525,10 @@
   padding: 8px;
 }
 .columns__rWYnD > :nth-child(2n + 1) {
-  width: calc((100% - 2 * 0px) * 5 / 12);
+  width: calc((100% - 2 * 0px) * 4 / 12);
 }
 .columns__rWYnD > :nth-child(2n + 2) {
-  width: calc((100% - 2 * 0px) * 7 / 12);
+  width: calc((100% - 2 * 0px) * 8 / 12);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .columns__rWYnD {
@@ -575,14 +554,14 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  padding: 8px;
+  padding: 16px;
 }
 .text___79EwX {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-size: 3em;
+  font-size: 24px;
   font-weight: 900;
   min-width: 0;
 }
@@ -591,7 +570,7 @@
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   min-width: 0;
 }
@@ -724,7 +703,6 @@
   font-weight: 600;
 }
 .freeBox___52Py2 {
-  display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -733,10 +711,14 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 24px;
+  display: none;
+  padding: 0px 24px 24px;
 }
 .heroButton__eqhq:global(.__wab_instance) {
   position: relative;
+}
+.text___6Q7Dr {
+  padding-bottom: 0px;
 }
 .text__f3Q3P {
   padding-right: 0px;
@@ -747,6 +729,47 @@
 .text__tiNf {
   color: #577ef5;
   font-weight: 600;
+}
+.freeBox___5RZnw {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  height: auto;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: auto;
+  padding: 8px;
+  margin: 50px;
+}
+.text___0Dprc {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 979px;
+  font-size: 60px;
+  text-align: left;
+  min-width: 0;
+}
+.h2__afIpa {
+  text-align: center;
+  font-size: 24px;
+  margin: 0px 0px 20px;
+}
+.text__awzEm {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+  min-width: 0;
+}
+.teamBox:global(.__wab_instance) {
+  position: relative;
 }
 .cta:global(.__wab_instance) {
   position: relative;

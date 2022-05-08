@@ -22,6 +22,7 @@ import TopicBox from "../../TopicBox"; // plasmic-import: 4mErNniXH-/component
 import Steps from "../../Steps"; // plasmic-import: ay6Z814B6W/component
 import DataOnBox from "../../DataOnBox"; // plasmic-import: NIyfODJbPf/component
 import HeroButton from "../../HeroButton"; // plasmic-import: IW0QnFgF_g4/component
+import TeamBox from "../../TeamBox"; // plasmic-import: zSCV1taeld/component
 import Cta from "../../Cta"; // plasmic-import: TsikC-dst8p/component
 import Footer from "../../Footer"; // plasmic-import: VbkWmUKrYAc/component
 import { useScreenVariants as useScreenVariantsgXe7KpKqBjNjl } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: gXe7KpKqBjNJL/globalVariant
@@ -92,7 +93,28 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                     sty.text__bhDaz
                   )}
                 >
-                  {"Simplifying  how local businesses can scale and "}
+                  {"There's a world of data out there."}
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__iNlQa
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>
+                      {"How much have you captured about "}
+                    </React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700, color: "#577EF5" }}
+                    >
+                      {"the businesses around you?"}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </div>
               </div>
             </div>
@@ -101,12 +123,12 @@ function PlasmicInvestorsCity__RenderFunc(props) {
               <p.PlasmicImg
                 alt={""}
                 className={classNames(sty.img__nrFzk)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
+                displayHeight={"600px"}
+                displayMaxHeight={"90%"}
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"900px"}
+                displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
                   src: "/plasmic/the_smb_toolkit/images/_17759Jpg.jpeg",
@@ -187,7 +209,7 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                 >
                   {hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "facts"
-                    : "facts"}
+                    : "Just like our toolkit for SMBs, we have a toolkit for you too."}
                 </div>
 
                 <div
@@ -199,147 +221,145 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                 >
                   {hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "we're on a misssion"
-                    : "we're on a misssion"}
+                    : "Cities, investors, developers, planners, brokers, you name it. We all need data... not just more of it... but higher quality, richer data.\n\nOur toolkit is comprised of no-nonsense, 101 tools that we've found the industry needs — from enriching business license data with social media profiles to tracking consumer sentiment around businesses to strategy sessions to identify drivers of economic growth in the retail landscape — our tookit has you covered."}
                 </div>
               </div>
             </p.Stack>
           </div>
 
-          <div className={classNames(projectcss.all, sty.columns__jefIs)}>
-            <div className={classNames(projectcss.all, sty.column__u7Ilb)}>
+          {true ? (
+            <div
+              data-plasmic-name={"facts"}
+              data-plasmic-override={overrides.facts}
+              className={classNames(projectcss.all, sty.facts)}
+            >
+              <div className={classNames(projectcss.all, sty.column__u7Ilb)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__u8D6F
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "facts"
+                    : "facts"}
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__bonl
+                  )}
+                >
+                  {
+                    "Join a community of insiders from across the world working to crack the code on inspiring, strengthening and scaling SMBs in your cities."
+                  }
+                </div>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column__dLsLv)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___6Yr5B)}
+                >
+                  <Steps
+                    className={classNames("__wab_instance", sty.steps___8ZPc5)}
+                  />
+                </div>
+
+                <Steps
+                  className={classNames("__wab_instance", sty.steps__jHgGz)}
+                />
+
+                <Steps
+                  className={classNames("__wab_instance", sty.steps__v9Ag)}
+                />
+              </div>
+            </div>
+          ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox___3Zyx5)}>
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__u8D6F
+                  sty.text__v1Hui
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "facts"
-                  : "facts"}
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__g0Afl
+                    )}
+                  >
+                    {"Tools that map and enrich a world of business data"}
+                  </h2>
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
               </div>
-            </div>
 
-            <div className={classNames(projectcss.all, sty.column__dLsLv)}>
-              <div className={classNames(projectcss.all, sty.freeBox___6Yr5B)}>
-                <Steps
-                  className={classNames("__wab_instance", sty.steps___8ZPc5)}
-                />
-              </div>
-
-              <Steps
-                className={classNames("__wab_instance", sty.steps__jHgGz)}
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__teyKb)}
+                displayHeight={"450px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"100%"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/the_smb_toolkit/images/globepng.png",
+                  fullWidth: 4096,
+                  fullHeight: 2040,
+                  aspectRatio: undefined
+                }}
               />
 
-              <Steps
-                className={classNames("__wab_instance", sty.steps__v9Ag)}
-              />
-            </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox___3Zyx5)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__v1Hui
-              )}
-            >
-              <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__g0Afl
-                  )}
+              {true ? (
+                <div
+                  data-plasmic-name={"factoids"}
+                  data-plasmic-override={overrides.factoids}
+                  className={classNames(projectcss.all, sty.factoids)}
                 >
-                  {"We have data on"}
-                </h2>
-                <React.Fragment>{""}</React.Fragment>
-              </React.Fragment>
+                  <DataOnBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.dataOnBox__o6Ztm
+                    )}
+                  />
+
+                  <DataOnBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.dataOnBox__orjNu
+                    )}
+                  >
+                    {"Every"}
+                  </DataOnBox>
+
+                  <DataOnBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.dataOnBox__sJj0B
+                    )}
+                  />
+
+                  <DataOnBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.dataOnBox__woSW
+                    )}
+                  />
+                </div>
+              ) : null}
             </div>
-
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__teyKb)}
-              displayHeight={"450px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"100%"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/the_smb_toolkit/images/globepng.png",
-                fullWidth: 4096,
-                fullHeight: 2040,
-                aspectRatio: undefined
-              }}
-            />
-
-            <div className={classNames(projectcss.all, sty.freeBox__ja1Dw)}>
-              <DataOnBox
-                className={classNames("__wab_instance", sty.dataOnBox__o6Ztm)}
-              />
-
-              <DataOnBox
-                className={classNames("__wab_instance", sty.dataOnBox__orjNu)}
-              />
-
-              <DataOnBox
-                className={classNames("__wab_instance", sty.dataOnBox__sJj0B)}
-              />
-
-              <DataOnBox
-                className={classNames("__wab_instance", sty.dataOnBox__woSW)}
-              />
-            </div>
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox___5RZnw)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text___0Dprc
-              )}
-            >
-              <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__afIpa
-                  )}
-                >
-                  {"Who we are"}
-                </h2>
-                <React.Fragment>{""}</React.Fragment>
-              </React.Fragment>
-            </div>
-
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__aZmHu)}
-              displayHeight={"200px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"200px"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/the_smb_toolkit/images/image.svg",
-                fullWidth: 150,
-                fullHeight: 150,
-                aspectRatio: 1
-              }}
-            />
-          </div>
+          ) : null}
 
           <div className={classNames(projectcss.all, sty.freeBox__jhzYe)}>
             <div className={classNames(projectcss.all, sty.columns__rWYnD)}>
@@ -378,12 +398,13 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                       className={classNames(projectcss.all, sty.column__af6I6)}
                     >
                       <HeroButton
-                        boxTitle={"For Small Businesses"}
+                        boxTitle={"Business data enrichment"}
                         className={classNames(
                           "__wab_instance",
                           sty.heroButton___11VA
                         )}
                         hundredWidth={true}
+                        link={"/contact"}
                         slot={"Open source resources "}
                         slot2={
                           <div
@@ -398,7 +419,7 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                         }
                         slot3={"A free toolkit forever"}
                         slot4={
-                          "Our SMB toolkit gives you free access to the know-hows of growing your business, particularly in the digital age we live in."
+                          "Shoot us your data and we'll enrich it with social media, web presence information, NAICS codes, you name it."
                         }
                         slot5={
                           <div
@@ -408,7 +429,7 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                               sty.text__qQSbE
                             )}
                           >
-                            {"Access our free toolkit"}
+                            {"Chat with us"}
                           </div>
                         }
                       >
@@ -428,12 +449,13 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                       className={classNames(projectcss.all, sty.column__mc4Nh)}
                     >
                       <HeroButton
-                        boxTitle={"For Small Businesses"}
+                        boxTitle={"Strategy & analysis"}
                         className={classNames(
                           "__wab_instance",
                           sty.heroButton__rRoFn
                         )}
                         hundredWidth={true}
+                        link={"/contact"}
                         slot={"Open source resources "}
                         slot2={
                           <div
@@ -448,7 +470,7 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                         }
                         slot3={"A free toolkit forever"}
                         slot4={
-                          "Our SMB toolkit gives you free access to the know-hows of growing your business, particularly in the digital age we live in."
+                          "Send us your questions about businesses and we can connect you with the right people in the SMB Toolkit network."
                         }
                         slot5={
                           <div
@@ -458,7 +480,7 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                               sty.text__gHoH5
                             )}
                           >
-                            {"Access our free toolkit"}
+                            {"Chat with us"}
                           </div>
                         }
                       >
@@ -476,57 +498,112 @@ function PlasmicInvestorsCity__RenderFunc(props) {
                   </p.Stack>
                 </div>
 
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___52Py2)}
-                >
-                  <HeroButton
-                    boxTitle={"For Small Businesses"}
-                    className={classNames(
-                      "__wab_instance",
-                      sty.heroButton__eqhq
-                    )}
-                    hundredWidth={true}
-                    slot={"Open source resources "}
-                    slot2={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__mHDiX
-                        )}
-                      >
-                        {"Get access to resources on pitching"}
-                      </div>
-                    }
-                    slot3={"A free toolkit forever"}
-                    slot4={
-                      "Our SMB toolkit gives you free access to the know-hows of growing your business, particularly in the digital age we live in."
-                    }
-                    slot5={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__tiNf
-                        )}
-                      >
-                        {"Access our free toolkit"}
-                      </div>
-                    }
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___52Py2)}
                   >
-                    <div
+                    <HeroButton
+                      boxTitle={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___6Q7Dr
+                          )}
+                        >
+                          {"For Small Businesses"}
+                        </div>
+                      }
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__f3Q3P
+                        "__wab_instance",
+                        sty.heroButton__eqhq
                       )}
+                      hundredWidth={true}
+                      slot={"Open source resources "}
+                      slot2={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__mHDiX
+                          )}
+                        >
+                          {"Get access to resources on pitching"}
+                        </div>
+                      }
+                      slot3={"A free toolkit forever"}
+                      slot4={
+                        "Our SMB toolkit gives you free access to the know-hows of growing your business, particularly in the digital age we live in."
+                      }
+                      slot5={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__tiNf
+                          )}
+                        >
+                          {"Chat with us"}
+                        </div>
+                      }
                     >
-                      {"Learn how to scale your business"}
-                    </div>
-                  </HeroButton>
-                </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__f3Q3P
+                        )}
+                      >
+                        {"Learn how to scale your business"}
+                      </div>
+                    </HeroButton>
+                  </div>
+                ) : null}
               </div>
             </div>
+          </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox___5RZnw)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___0Dprc
+              )}
+            >
+              <React.Fragment>
+                <React.Fragment>{""}</React.Fragment>
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__afIpa
+                  )}
+                >
+                  {"Who we are"}
+                </h2>
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
+            </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__awzEm
+              )}
+            >
+              {
+                "We're passionate about supporting small businesses and when we're not running our own projects, make it a priority to dedicate our time to developing and refining the SMB Toolkit."
+              }
+            </div>
+
+            <TeamBox
+              data-plasmic-name={"teamBox"}
+              data-plasmic-override={overrides.teamBox}
+              className={classNames("__wab_instance", sty.teamBox)}
+            />
           </div>
 
           <Cta
@@ -547,11 +624,26 @@ function PlasmicInvestorsCity__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "hero", "quickFacts", "aNewWorld", "cta", "footer"],
+  root: [
+    "root",
+    "navbar",
+    "hero",
+    "quickFacts",
+    "aNewWorld",
+    "facts",
+    "factoids",
+    "teamBox",
+    "cta",
+    "footer"
+  ],
+
   navbar: ["navbar"],
   hero: ["hero"],
   quickFacts: ["quickFacts"],
   aNewWorld: ["aNewWorld"],
+  facts: ["facts"],
+  factoids: ["factoids"],
+  teamBox: ["teamBox"],
   cta: ["cta"],
   footer: ["footer"]
 };
@@ -589,6 +681,9 @@ export const PlasmicInvestorsCity = Object.assign(
     hero: makeNodeComponent("hero"),
     quickFacts: makeNodeComponent("quickFacts"),
     aNewWorld: makeNodeComponent("aNewWorld"),
+    facts: makeNodeComponent("facts"),
+    factoids: makeNodeComponent("factoids"),
+    teamBox: makeNodeComponent("teamBox"),
     cta: makeNodeComponent("cta"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicInvestorsCity

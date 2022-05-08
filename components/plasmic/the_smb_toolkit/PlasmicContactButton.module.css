@@ -14,3 +14,6 @@
 .rootunnamedVariant {
   background: #9057f5;
 }
+.root:hover {
+  background: #577ef5;
+}

@@ -60,7 +60,7 @@ function PlasmicNavbar__RenderFunc(props) {
           data-plasmic-override={overrides.link}
           className={classNames(projectcss.all, projectcss.a, sty.link)}
           component={Link}
-          href={"https://www.plasmic.app/"}
+          href={"/"}
           platform={"nextjs"}
         >
           {true ? (
@@ -76,10 +76,10 @@ function PlasmicNavbar__RenderFunc(props) {
               displayMinWidth={"0"}
               displayWidth={"40px"}
               src={{
-                src: "/plasmic/the_smb_toolkit/images/image.svg",
-                fullWidth: 150,
-                fullHeight: 150,
-                aspectRatio: 1
+                src: "/plasmic/the_smb_toolkit/images/group1349Png.png",
+                fullWidth: 412,
+                fullHeight: 511,
+                aspectRatio: undefined
               }}
             />
           ) : null}
@@ -119,7 +119,7 @@ function PlasmicNavbar__RenderFunc(props) {
           <Button
             className={classNames("__wab_instance", sty.button__uyZPw)}
             color={"clear"}
-            link={"/checklist"}
+            link={"/checklist-explainer"}
           >
             <div
               className={classNames(
@@ -128,7 +128,23 @@ function PlasmicNavbar__RenderFunc(props) {
                 sty.text___8K6Hk
               )}
             >
-              {"For Businesses"}
+              {"The SMB Checklist"}
+            </div>
+          </Button>
+
+          <Button
+            className={classNames("__wab_instance", sty.button___9Poq9)}
+            color={"clear"}
+            link={"/resources-for-businesses"}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__n9Vv
+              )}
+            >
+              {"More Resources"}
             </div>
           </Button>
         </p.Stack>

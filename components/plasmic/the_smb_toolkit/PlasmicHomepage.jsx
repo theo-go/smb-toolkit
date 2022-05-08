@@ -9,6 +9,7 @@
 // Plasmic Project: vZXZgeU1YqYWghemcQX2Q1
 // Component: h0X7_Kol3yFf
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
   classNames,
@@ -18,6 +19,7 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: MfRpGDkJ8b4/component
 import HeroButton from "../../HeroButton"; // plasmic-import: IW0QnFgF_g4/component
+import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
 import FunFactBox from "../../FunFactBox"; // plasmic-import: 6ql_UK2WJy/component
 import TopicBox from "../../TopicBox"; // plasmic-import: 4mErNniXH-/component
 import Cta from "../../Cta"; // plasmic-import: TsikC-dst8p/component
@@ -145,7 +147,35 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__sO2H
                   )}
                 >
-                  {"We're on a mission to simplify how small businesses scale."}
+                  {
+                    "It's frustrating as a small business owner searching the internet for business tips."
+                  }
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__qjsyR
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{"We're on a mission to "}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700, color: "#577EF5" }}
+                    >
+                      {"simplify the checklist"}
+                    </span>
+                    <React.Fragment>{" you need to "}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700, color: "#577EF5" }}
+                    >
+                      {"scale your business."}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </div>
               </p.Stack>
 
@@ -161,7 +191,8 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.heroButton__kLyzD
                     )}
-                    slot={"Open source resources "}
+                    link={"/checklist-explainer"}
+                    slot={"Prepare your business plan"}
                     slot2={
                       <div
                         className={classNames(
@@ -170,7 +201,9 @@ function PlasmicHomepage__RenderFunc(props) {
                           sty.text__lGzy
                         )}
                       >
-                        {"Get access to resources on pitching"}
+                        {
+                          "The 101s of digital marketing, SEO, and getting your brand on the map"
+                        }
                       </div>
                     }
                     slot3={"A free toolkit forever"}
@@ -206,6 +239,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.heroButton___7LjY3
                     )}
+                    link={"/investors/city"}
                     slot={
                       <div
                         className={classNames(
@@ -214,10 +248,12 @@ function PlasmicHomepage__RenderFunc(props) {
                           sty.text__ujoyj
                         )}
                       >
-                        {"Get access to trending businesses"}
+                        {"Get a list of trending businesses"}
                       </div>
                     }
-                    slot2={"Get access to Basil Labs' database"}
+                    slot2={
+                      "Get up-to-date information on brick-and-mortar businesses in your city"
+                    }
                     slot3={
                       <div
                         className={classNames(
@@ -226,7 +262,7 @@ function PlasmicHomepage__RenderFunc(props) {
                           sty.text__uvA6E
                         )}
                       >
-                        {"Benchmark SMBs"}
+                        {"Tech-powered insights"}
                       </div>
                     }
                     slot4={
@@ -238,7 +274,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         )}
                       >
                         {
-                          "Just like our SMB toolkit, our toolkit for cities & investors is streamlined for identifying strong investments and avoiding investment risks."
+                          "Just like our SMB toolkit, our toolkit for cities & investors is streamlined to identify strong investments and avoid investment risks."
                         }
                       </div>
                     }
@@ -254,7 +290,15 @@ function PlasmicHomepage__RenderFunc(props) {
                       </div>
                     }
                   >
-                    {"Learn your retail tourism readiness"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___02Kqh
+                      )}
+                    >
+                      {"Benchmark your retail strengths"}
+                    </div>
                   </HeroButton>
                 </p.Stack>
               </div>
@@ -273,113 +317,130 @@ function PlasmicHomepage__RenderFunc(props) {
                 sty.text__fRmXi
               )}
             >
-              {"Why build an SMB toolkit?"}
+              {"Why a no-nonsense SMB toolkit?"}
             </div>
 
             <div className={classNames(projectcss.all, sty.freeBox__zevzp)}>
               <div className={classNames(projectcss.all, sty.freeBox__bDqnl)}>
-                <FunFactBox
-                  className={classNames(
-                    "__wab_instance",
-                    sty.funFactBox__fovXj
-                  )}
-                />
+                <Tilt className={classNames("__wab_instance", sty.tilt__aAzh)}>
+                  <FunFactBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.funFactBox__fDuXv
+                    )}
+                    slot={"50"}
+                    slot2={"of all jobs worldwide"}
+                    unnamedVariant3={true}
+                  >
+                    {"Small businesses account for..."}
+                  </FunFactBox>
+                </Tilt>
 
-                <FunFactBox
-                  className={classNames(
-                    "__wab_instance",
-                    sty.funFactBox__fDuXv
-                  )}
-                  slot={"50"}
-                  slot2={"of all jobs worldwide"}
-                  unnamedVariant3={true}
+                <Tilt className={classNames("__wab_instance", sty.tilt__zk67)}>
+                  <FunFactBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.funFactBox__fovXj
+                    )}
+                  />
+                </Tilt>
+
+                <Tilt className={classNames("__wab_instance", sty.tilt__tu9YK)}>
+                  <FunFactBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.funFactBox__p7Ngm
+                    )}
+                    slot={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__x9Kdx
+                          )}
+                        >
+                          {"3"}
+                        </div>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__y929S
+                          )}
+                        >
+                          {"."}
+                        </div>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___510Sc
+                          )}
+                        >
+                          {"5"}
+                        </div>
+                      </React.Fragment>
+                    }
+                    unnamedVariant2={true}
+                  >
+                    {"Small businesses account for..."}
+                  </FunFactBox>
+                </Tilt>
+
+                <Tilt className={classNames("__wab_instance", sty.tilt__fqaWv)}>
+                  <FunFactBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.funFactBox__ri5I
+                    )}
+                    slot={"400"}
+                    unnamedVariant={true}
+                  />
+                </Tilt>
+
+                <Tilt
+                  className={classNames("__wab_instance", sty.tilt___0MU6T)}
                 >
-                  {"Small businesses account for..."}
-                </FunFactBox>
+                  <FunFactBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.funFactBox__l3RAi
+                    )}
+                    slot={"40"}
+                    slot2={"of national income in emerging economies"}
+                    unnamedVariant4={true}
+                  >
+                    {"SMEs contribute up to..."}
+                  </FunFactBox>
+                </Tilt>
 
-                <FunFactBox
-                  className={classNames(
-                    "__wab_instance",
-                    sty.funFactBox__p7Ngm
-                  )}
-                  slot={
-                    <React.Fragment>
+                <Tilt className={classNames("__wab_instance", sty.tilt__hyZiC)}>
+                  <FunFactBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.funFactBox__r9M7W
+                    )}
+                    slot={"7"}
+                    slot2={
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__x9Kdx
+                          sty.text__p0Geu
                         )}
                       >
-                        {"3"}
+                        {"formal jobs are generated by SMEs"}
                       </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__y929S
-                        )}
-                      >
-                        {"."}
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___510Sc
-                        )}
-                      >
-                        {"5"}
-                      </div>
-                    </React.Fragment>
-                  }
-                  unnamedVariant2={true}
-                >
-                  {"Small businesses account for..."}
-                </FunFactBox>
-
-                <FunFactBox
-                  className={classNames("__wab_instance", sty.funFactBox__ri5I)}
-                  slot={"400"}
-                  unnamedVariant={true}
-                />
-
-                <FunFactBox
-                  className={classNames(
-                    "__wab_instance",
-                    sty.funFactBox__l3RAi
-                  )}
-                  slot={"40"}
-                  slot2={"of national income in emerging economies"}
-                  unnamedVariant4={true}
-                >
-                  {"SMEs contribute up to..."}
-                </FunFactBox>
-
-                <FunFactBox
-                  className={classNames(
-                    "__wab_instance",
-                    sty.funFactBox__r9M7W
-                  )}
-                  slot={"7"}
-                  slot2={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__p0Geu
-                      )}
-                    >
-                      {"formal jobs are generated by SMEs"}
-                    </div>
-                  }
-                  slot3={"/10"}
-                  unnamedVariant5={true}
-                >
-                  {"In emerging markets,"}
-                </FunFactBox>
+                    }
+                    slot3={"/10"}
+                    unnamedVariant5={true}
+                  >
+                    {"In emerging markets,"}
+                  </FunFactBox>
+                </Tilt>
               </div>
             </div>
 
@@ -390,18 +451,49 @@ function PlasmicHomepage__RenderFunc(props) {
                 sty.text__jpbAo
               )}
             >
-              {"We're on a mission to empower businesses."}
+              <React.Fragment>
+                <React.Fragment>{"There's "}</React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontWeight: 700, color: "#577EF5" }}
+                >
+                  {"a lot of fluff"}
+                </span>
+                <React.Fragment>{" on the internet.\nWe're "}</React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontWeight: 700, color: "#577EF5" }}
+                >
+                  {"on a mission"}
+                </span>
+                <React.Fragment>{" to "}</React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontWeight: 700, color: "#577EF5" }}
+                >
+                  {"streamline the resources"}
+                </span>
+                <React.Fragment>
+                  {" that an SMB owner needs to scale."}
+                </React.Fragment>
+              </React.Fragment>
             </div>
 
-            <div
+            <p.PlasmicLink
+              data-plasmic-name={"link"}
+              data-plasmic-override={overrides.link}
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text__obKjP
+                sty.link
               )}
+              component={Link}
+              href={"/contact"}
+              platform={"nextjs"}
             >
-              {"Join us in our mission"}
-            </div>
+              {"Join our mission"}
+            </p.PlasmicLink>
           </div>
 
           <div
@@ -421,7 +513,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__x6MtE
                 )}
               >
-                {"Why build an SMB toolkit?"}
+                {"How does it work?"}
               </div>
 
               <p.Stack
@@ -461,7 +553,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text__mKKuD
                     )}
                   >
-                    {"Our checklist is here to help you grow!"}
+                    {"We built a free, no-fluff checklist for small businesses"}
                   </div>
 
                   <div
@@ -472,7 +564,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Get access to everything you need to know to take your business to the nexr level."
+                      'It\'s hard to juggle more than one thing at once. Imagine running your own business, having to handle everything from legal and accounting to dealing with needy customers to keeping your head above water to strategize for the future.\n\nWe get it. The problem is, when we look online for resources or Google really critical steps in the business journey like "Why do people register businesses in Delaware?" or "How to put together a business plan when talking to investors?" — There just isn\'t a whole lot of good resources out there...\n\nThis project is here to fix that. We\'ve consolidated and vetted the best resources on the internet in the form of a checklist to walk business owners through step-by-step to prepare and scale their businesses. '
                     }
                   </div>
                 </div>
@@ -511,6 +603,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 <TopicBox
                   className={classNames("__wab_instance", sty.topicBox__nwSbs)}
                   slot={"Marketing"}
+                  topicBoxLink={"/checklist-explainer"}
                 />
 
                 <TopicBox
@@ -522,6 +615,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     aspectRatio: undefined
                   }}
                   slot={"Legal"}
+                  topicBoxLink={"/checklist-explainer"}
                   unnamedVariant={true}
                 />
 
@@ -534,6 +628,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     aspectRatio: undefined
                   }}
                   slot={"Access to Capital"}
+                  topicBoxLink={"/checklist-explainer"}
                   unnamedVariant2={true}
                 />
               </div>
@@ -566,6 +661,7 @@ const PlasmicDescendants = {
     "h1",
     "h2",
     "factsAboutBusinesses",
+    "link",
     "restOfPage",
     "checklistDemo",
     "columns",
@@ -580,7 +676,8 @@ const PlasmicDescendants = {
   hero: ["hero", "h1", "h2"],
   h1: ["h1", "h2"],
   h2: ["h2"],
-  factsAboutBusinesses: ["factsAboutBusinesses"],
+  factsAboutBusinesses: ["factsAboutBusinesses", "link"],
+  link: ["link"],
   restOfPage: [
     "restOfPage",
     "checklistDemo",
@@ -634,6 +731,7 @@ export const PlasmicHomepage = Object.assign(
     h1: makeNodeComponent("h1"),
     h2: makeNodeComponent("h2"),
     factsAboutBusinesses: makeNodeComponent("factsAboutBusinesses"),
+    link: makeNodeComponent("link"),
     restOfPage: makeNodeComponent("restOfPage"),
     checklistDemo: makeNodeComponent("checklistDemo"),
     columns: makeNodeComponent("columns"),

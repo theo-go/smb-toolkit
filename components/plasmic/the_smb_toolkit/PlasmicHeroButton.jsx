@@ -9,6 +9,7 @@
 // Plasmic Project: vZXZgeU1YqYWghemcQX2Q1
 // Component: IW0QnFgF_g4
 import * as React from "react";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
   hasVariant,
@@ -31,20 +32,22 @@ export const PlasmicHeroButton__ArgProps = new Array(
   "slot2",
   "slot3",
   "slot4",
-  "slot5"
+  "slot5",
+  "link"
 );
 
 function PlasmicHeroButton__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
   const $props = props.args;
   return (
-    <div
+    <p.PlasmicLink
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
@@ -57,6 +60,9 @@ function PlasmicHeroButton__RenderFunc(props) {
           )
         }
       )}
+      component={Link}
+      href={args.link}
+      platform={"nextjs"}
     >
       <div className={classNames(projectcss.all, sty.freeBox__tmj2C)}>
         <TopButton
@@ -88,52 +94,64 @@ function PlasmicHeroButton__RenderFunc(props) {
         </div>
       </div>
 
-      <div className={classNames(projectcss.all, sty.freeBox__i37BU)}>
-        <div className={classNames(projectcss.all, sty.freeBox__kWjQ)}>
-          <ChecksvgIcon
-            className={classNames(projectcss.all, sty.svg___0V6C9)}
-            role={"img"}
-          />
+      {(hasVariant(variants, "hundredWidth", "hundredWidth") ? true : true) ? (
+        <div
+          data-plasmic-name={"cheks"}
+          data-plasmic-override={overrides.cheks}
+          className={classNames(projectcss.all, sty.cheks, {
+            [sty.chekshundredWidth]: hasVariant(
+              variants,
+              "hundredWidth",
+              "hundredWidth"
+            )
+          })}
+        >
+          <div className={classNames(projectcss.all, sty.freeBox__kWjQ)}>
+            <ChecksvgIcon
+              className={classNames(projectcss.all, sty.svg___0V6C9)}
+              role={"img"}
+            />
 
-          <div className={classNames(projectcss.all, sty.freeBox__lHdG)}>
-            {p.renderPlasmicSlot({
-              defaultContents: "Enter some text",
-              value: args.children,
-              className: classNames(sty.slotTargetChildren)
-            })}
+            <div className={classNames(projectcss.all, sty.freeBox__lHdG)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "Enter some text",
+                value: args.children,
+                className: classNames(sty.slotTargetChildren)
+              })}
+            </div>
+          </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__sMhzu)}>
+            <ChecksvgIcon
+              className={classNames(projectcss.all, sty.svg__bvzZm)}
+              role={"img"}
+            />
+
+            <div className={classNames(projectcss.all, sty.freeBox__ax5Lg)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "Enter some text",
+                value: args.slot2,
+                className: classNames(sty.slotTargetSlot2)
+              })}
+            </div>
+          </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__iIppj)}>
+            <ChecksvgIcon
+              className={classNames(projectcss.all, sty.svg__pIWze)}
+              role={"img"}
+            />
+
+            <div className={classNames(projectcss.all, sty.freeBox__kQnDh)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "Enter some text",
+                value: args.slot,
+                className: classNames(sty.slotTargetSlot)
+              })}
+            </div>
           </div>
         </div>
-
-        <div className={classNames(projectcss.all, sty.freeBox__sMhzu)}>
-          <ChecksvgIcon
-            className={classNames(projectcss.all, sty.svg__bvzZm)}
-            role={"img"}
-          />
-
-          <div className={classNames(projectcss.all, sty.freeBox__ax5Lg)}>
-            {p.renderPlasmicSlot({
-              defaultContents: "Enter some text",
-              value: args.slot2,
-              className: classNames(sty.slotTargetSlot2)
-            })}
-          </div>
-        </div>
-
-        <div className={classNames(projectcss.all, sty.freeBox__iIppj)}>
-          <ChecksvgIcon
-            className={classNames(projectcss.all, sty.svg__pIWze)}
-            role={"img"}
-          />
-
-          <div className={classNames(projectcss.all, sty.freeBox__kQnDh)}>
-            {p.renderPlasmicSlot({
-              defaultContents: "Enter some text",
-              value: args.slot,
-              className: classNames(sty.slotTargetSlot)
-            })}
-          </div>
-        </div>
-      </div>
+      ) : null}
 
       <div className={classNames(projectcss.all, sty.freeBox__nBv7L)}>
         <div className={classNames(projectcss.all, sty.freeBox___2Jfe)}>
@@ -144,13 +162,14 @@ function PlasmicHeroButton__RenderFunc(props) {
           })}
         </div>
       </div>
-    </div>
+    </p.PlasmicLink>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "topButton"],
-  topButton: ["topButton"]
+  root: ["root", "topButton", "cheks"],
+  topButton: ["topButton"],
+  cheks: ["cheks"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -183,6 +202,7 @@ export const PlasmicHeroButton = Object.assign(
   {
     // Helper components rendering sub-elements
     topButton: makeNodeComponent("topButton"),
+    cheks: makeNodeComponent("cheks"),
     // Metadata about props expected for PlasmicHeroButton
     internalVariantProps: PlasmicHeroButton__VariantProps,
     internalArgProps: PlasmicHeroButton__ArgProps

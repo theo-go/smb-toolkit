@@ -8,6 +8,7 @@
   max-width: 100%;
   background: #ffffff;
   position: relative;
+  color: #535353;
   border-radius: 12px;
   padding: 8px;
   border-width: 3px;
@@ -73,7 +74,7 @@
   font-size: 11px;
   font-weight: 500;
 }
-.freeBox__i37BU {
+.cheks {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -84,6 +85,9 @@
   max-width: 100%;
   min-width: 0;
   padding: 8px;
+}
+.chekshundredWidth {
+  display: none;
 }
 .freeBox__kWjQ {
   display: flex;

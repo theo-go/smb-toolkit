@@ -1,15 +1,16 @@
-.root {
+.link {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
   width: 265px;
-  height: 100%;
+  height: auto;
   max-width: 100%;
   background: #ffffff;
   position: relative;
   min-height: 300px;
   cursor: pointer;
+  color: #535353;
   border-style: none;
 }
 .freeBox__rcX43 {
@@ -49,16 +50,20 @@
   min-width: 0;
   padding: 8px;
 }
-.text__bSt2B {
+.freeBox__bSt2B {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-weight: 900;
-  font-size: 1.3em;
+  display: flex;
+  flex-direction: row;
   min-width: 0;
 }
-.text__zs3M {
+.slotTargetTitle {
+  font-size: 1.3em;
+  font-weight: 900;
+}
+.description {
   position: relative;
   width: 100%;
   height: auto;

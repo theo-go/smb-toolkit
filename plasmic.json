@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -158,7 +158,8 @@
           "name": "Tabs",
           "componentImportPath": "@plasmicpkgs/antd"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "vZXZgeU1YqYWghemcQX2Q1",
@@ -267,7 +268,7 @@
           "projectId": "vZXZgeU1YqYWghemcQX2Q1",
           "renderModuleFilePath": "plasmic/the_smb_toolkit/PlasmicChecklist.jsx",
           "importSpec": {
-            "modulePath": "../pages/checklist.jsx"
+            "modulePath": "../pages/checklist-explainer.jsx"
           },
           "cssFilePath": "plasmic/the_smb_toolkit/PlasmicChecklist.module.css",
           "scheme": "blackbox",
@@ -416,6 +417,32 @@
           "cssFilePath": "plasmic/the_smb_toolkit/PlasmicDataOnBox.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "zSCV1taeld",
+          "name": "TeamBox",
+          "type": "managed",
+          "projectId": "vZXZgeU1YqYWghemcQX2Q1",
+          "renderModuleFilePath": "plasmic/the_smb_toolkit/PlasmicTeamBox.jsx",
+          "importSpec": {
+            "modulePath": "TeamBox.jsx"
+          },
+          "cssFilePath": "plasmic/the_smb_toolkit/PlasmicTeamBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "JFRETcG6RZ",
+          "name": "Contact",
+          "type": "managed",
+          "projectId": "vZXZgeU1YqYWghemcQX2Q1",
+          "renderModuleFilePath": "plasmic/the_smb_toolkit/PlasmicContact.jsx",
+          "importSpec": {
+            "modulePath": "../pages/contact.jsx"
+          },
+          "cssFilePath": "plasmic/the_smb_toolkit/PlasmicContact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -525,11 +552,71 @@
           "id": "9fMA-TK7i",
           "name": "globe.png",
           "filePath": "../public/plasmic/the_smb_toolkit/images/globepng.png"
+        },
+        {
+          "id": "HcXD80Z3l",
+          "name": "Group.png",
+          "filePath": "../public/plasmic/the_smb_toolkit/images/grouppng.png"
+        },
+        {
+          "id": "OV0v55gYA",
+          "name": "Group 1349.png",
+          "filePath": "../public/plasmic/the_smb_toolkit/images/group1349Png.png"
+        },
+        {
+          "id": "I-eamCB-s",
+          "name": "photo_2022-04-30_14-31-31 2.png",
+          "filePath": "../public/plasmic/the_smb_toolkit/images/photo202204301431312Png.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/the_smb_toolkit/PlasmicGlobalContextsProvider.jsx",
       "codeComponents": []
+    },
+    {
+      "projectId": "84wxoth5npGrp6RRXPL88z",
+      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
+      "projectName": "react-scroll-parallax-global",
+      "version": "4.0.1",
+      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic_react_scroll_parallax_global.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.jsx",
+      "codeComponents": [
+        {
+          "id": "bozP4lLlAZ",
+          "name": "ParallaxWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        },
+        {
+          "id": "L6MfauX2Cw",
+          "name": "ParallaxProviderWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        }
+      ],
+      "jsBundleThemes": []
+    },
+    {
+      "projectId": "szjgMQpPpxhmkjnaBvZQJG",
+      "projectApiToken": "xBIsrWHdWZ9kVgFEGUt29LOZPWfm0XidYqRHqPhQXsEjDHevjIbp44nEYMIZ46YOoxrN8anfXjreTkDtFjTA",
+      "projectName": "react-parallax-tilt",
+      "version": "1.0.4",
+      "cssFilePath": "plasmic/react_parallax_tilt/plasmic_react_parallax_tilt.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "PfY466VIuq",
+          "name": "Tilt",
+          "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
+        }
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
@@ -539,6 +626,12 @@
         "name": "Screen",
         "projectId": "vZXZgeU1YqYWghemcQX2Q1",
         "contextFilePath": "plasmic/the_smb_toolkit/PlasmicGlobalVariant__Screen.jsx"
+      },
+      {
+        "id": "ckLLdnw4lO",
+        "name": "Screen",
+        "projectId": "szjgMQpPpxhmkjnaBvZQJG",
+        "contextFilePath": "plasmic/react_parallax_tilt/PlasmicGlobalVariant__Screen.jsx"
       }
     ]
   },

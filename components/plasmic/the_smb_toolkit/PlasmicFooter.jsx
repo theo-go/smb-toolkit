@@ -87,10 +87,10 @@ function PlasmicFooter__RenderFunc(props) {
                 displayMinWidth={"0"}
                 displayWidth={"40px"}
                 src={{
-                  src: "/plasmic/the_smb_toolkit/images/image.svg",
-                  fullWidth: 150,
-                  fullHeight: 150,
-                  aspectRatio: 1
+                  src: "/plasmic/the_smb_toolkit/images/group1349Png.png",
+                  fullWidth: 412,
+                  fullHeight: 511,
+                  aspectRatio: undefined
                 }}
               />
             ) : null}
@@ -149,6 +149,20 @@ function PlasmicFooter__RenderFunc(props) {
         <div className={classNames(projectcss.all, sty.column__dht0N)}>
           <div className={classNames(projectcss.all, sty.freeBox___1GtTa)}>
             <FooterLinks
+              className={classNames("__wab_instance", sty.footerLinks__vYslc)}
+              link={"/checklist-explainer"}
+            >
+              {"The SMB Checklist"}
+            </FooterLinks>
+
+            <FooterLinks
+              className={classNames("__wab_instance", sty.footerLinks__wcwFc)}
+              link={"/resources-for-businesses"}
+            >
+              {"101 Resources"}
+            </FooterLinks>
+
+            <FooterLinks
               className={classNames("__wab_instance", sty.footerLinks__gp0Tv)}
               link={"/investors/city"}
             >
@@ -156,14 +170,8 @@ function PlasmicFooter__RenderFunc(props) {
             </FooterLinks>
 
             <FooterLinks
-              className={classNames("__wab_instance", sty.footerLinks__vYslc)}
-              link={"/checklist"}
-            >
-              {"For Small Businesses"}
-            </FooterLinks>
-
-            <FooterLinks
               className={classNames("__wab_instance", sty.footerLinks__cFnym)}
+              link={"/contact"}
             />
           </div>
         </div>

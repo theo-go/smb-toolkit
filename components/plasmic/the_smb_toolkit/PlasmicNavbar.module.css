@@ -98,18 +98,19 @@
   font-size: 18px;
 }
 .img {
-  object-fit: cover;
+  object-fit: contain;
   width: 40px;
   height: 40px;
   position: relative;
+  margin-right: 5px;
   flex-shrink: 0;
-  display: none !important;
+  display: inline-block !important;
 }
 .img > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img > .__wab_img-spacer > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .text__cLgpe {
   position: relative;
@@ -169,7 +170,7 @@
 }
 .text__wtSq4 {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   font-style: normal;
   color: #1b1b18;
@@ -201,7 +202,7 @@
 }
 .text___8K6Hk {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   font-style: normal;
   color: #1b1b18;
@@ -221,6 +222,38 @@
   height: 1em;
 }
 .svg__if46A {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.button___9Poq9:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  align-self: flex-start;
+}
+.text__n9Vv {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: #1b1b18;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre;
+  user-select: text;
+  text-decoration-line: none !important;
+  text-overflow: clip !important;
+}
+.svg__k4ZOv {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__xhZy {
   position: relative;
   object-fit: cover;
   width: 1em;

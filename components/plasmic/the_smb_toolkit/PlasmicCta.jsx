@@ -118,6 +118,18 @@ function PlasmicCta__RenderFunc(props) {
               </div>
             </div>
 
+            <div className={classNames(projectcss.all, sty.freeBox__cn5Uo)}>
+              <div className={classNames(projectcss.all, sty.freeBox__d7SLv)}>
+                <TextInput
+                  data-plasmic-name={"message"}
+                  data-plasmic-override={overrides.message}
+                  aria-labelledby={""}
+                  className={classNames("__wab_instance", sty.message)}
+                  placeholder={"Message"}
+                />
+              </div>
+            </div>
+
             <div className={classNames(projectcss.all, sty.freeBox__jMqv)}>
               <ContactButton
                 data-plasmic-name={"contactButton"}
@@ -140,6 +152,7 @@ const PlasmicDescendants = {
     "lastName",
     "email",
     "companyName",
+    "message",
     "contactButton"
   ],
 
@@ -149,6 +162,7 @@ const PlasmicDescendants = {
     "lastName",
     "email",
     "companyName",
+    "message",
     "contactButton"
   ],
 
@@ -156,6 +170,7 @@ const PlasmicDescendants = {
   lastName: ["lastName"],
   email: ["email"],
   companyName: ["companyName"],
+  message: ["message"],
   contactButton: ["contactButton"]
 };
 
@@ -193,6 +208,7 @@ export const PlasmicCta = Object.assign(
     lastName: makeNodeComponent("lastName"),
     email: makeNodeComponent("email"),
     companyName: makeNodeComponent("companyName"),
+    message: makeNodeComponent("message"),
     contactButton: makeNodeComponent("contactButton"),
     // Metadata about props expected for PlasmicCta
     internalVariantProps: PlasmicCta__VariantProps,
