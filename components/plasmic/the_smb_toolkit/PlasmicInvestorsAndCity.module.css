@@ -100,15 +100,20 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  max-height: 90%;
-  height: 600px;
-  flex-shrink: 0;
+  max-height: 600px;
+  height: auto;
 }
 .img__nrFzk > picture > img {
   object-fit: contain;
 }
 .img__nrFzk > .__wab_img-spacer > img {
   object-fit: contain;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__nrFzk {
+    height: 100%;
+    min-height: 0;
+  }
 }
 .quickFacts {
   position: relative;
@@ -271,45 +276,21 @@
   min-width: 0;
   padding: 8px;
 }
-.text___0Irva {
+.text__hmJrn {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
   font-size: 24px;
-  text-align: left;
   font-weight: 900;
-  margin-bottom: 15px;
   min-width: 0;
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .text___0Irva {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    font-size: 60px;
-    min-width: 0;
-  }
-}
-.text__rdyAx {
+.text__gbsjv {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
-  text-align: left;
   min-width: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .text__rdyAx {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    min-width: 0;
-  }
 }
 .facts {
   position: relative;
@@ -782,6 +763,12 @@
   max-width: 100%;
   min-width: 0;
   padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .teamMembers {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .teamBox:global(.__wab_instance) {
   position: relative;

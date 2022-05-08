@@ -123,8 +123,12 @@ function PlasmicInvestorsAndCity__RenderFunc(props) {
               <p.PlasmicImg
                 alt={""}
                 className={classNames(sty.img__nrFzk)}
-                displayHeight={"600px"}
-                displayMaxHeight={"90%"}
+                displayHeight={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "100%"
+                    : "auto"
+                }
+                displayMaxHeight={"600px"}
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
@@ -204,24 +208,24 @@ function PlasmicInvestorsAndCity__RenderFunc(props) {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___0Irva
+                    sty.text__hmJrn
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "facts"
-                    : "Just like our toolkit for SMBs, we have a toolkit for you too."}
+                  {
+                    "Just like our toolkit for SMBs, we have a toolkit for you too."
+                  }
                 </div>
 
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__rdyAx
+                    sty.text__gbsjv
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "we're on a misssion"
-                    : "Cities, investors, developers, planners, brokers, you name it. We all need data... not just more of it... but higher quality, richer data.\n\nOur toolkit is comprised of no-nonsense, 101 tools that we've found the industry needs — from enriching business license data with social media profiles to tracking consumer sentiment around businesses to strategy sessions to identify drivers of economic growth in the retail landscape — our tookit has you covered."}
+                  {
+                    "Cities, investors, developers, planners, brokers, you name it. We all need data... not just more of it... but higher quality, richer data.\n\nOur toolkit is comprised of no-nonsense, 101 tools that we've found the industry needs — from enriching business license data with social media profiles to tracking consumer sentiment around businesses to strategy sessions to identify drivers of economic growth in the retail landscape — our tookit has you covered."
+                  }
                 </div>
               </div>
             </p.Stack>

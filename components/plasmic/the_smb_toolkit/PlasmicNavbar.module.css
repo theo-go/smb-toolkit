@@ -24,7 +24,7 @@
   .root {
     width: 100%;
     min-width: 0;
-    padding: 32px;
+    padding: 0px 32px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -147,8 +147,10 @@
   .freeBox__gsWdm > :global(.__wab_flex-container) {
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: calc(0px - 8px);
-    height: calc(100% + 8px);
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -160,7 +162,8 @@
     > :global(.__wab_slot)
     > picture
     > img {
-    margin-top: 8px;
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
 .button__jxvF4:global(.__wab_instance) {

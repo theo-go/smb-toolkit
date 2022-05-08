@@ -12,7 +12,6 @@ import * as React from "react";
 import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -121,144 +120,105 @@ function PlasmicChecklist__RenderFunc(props) {
               className={classNames(projectcss.all, sty.columns)}
             >
               <div className={classNames(projectcss.all, sty.column__aiGp)}>
-                <div
+                <h3
+                  data-plasmic-name={"h3"}
+                  data-plasmic-override={overrides.h3}
                   className={classNames(
                     projectcss.all,
+                    projectcss.h3,
                     projectcss.__wab_text,
-                    sty.text__zc8A
+                    sty.h3
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                    "facts"
-                  ) : (
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      <h3
-                        data-plasmic-name={"h3"}
-                        data-plasmic-override={overrides.h3}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h3,
-                          projectcss.__wab_text,
-                          sty.h3
-                        )}
-                      >
-                        {"The only list of resources you'll need"}
-                      </h3>
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
-                  )}
-                </div>
+                  {"The only list of resources you'll need"}
+                </h3>
 
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__bUBif
+                    sty.text__dx7Tu
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {"we're on a misssion"}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
-                  ) : (
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {"A concise guide to growing your business"}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
-                  )}
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"A concise guide to growing your business"}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </div>
 
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__ic75H
+                    sty.text___5P89
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Enter some text"
-                    : "We know it's not easy handling everything by yourself. This checklist/tookit is here to help you keep your head on straight."}
+                  {
+                    "We know it's not easy handling everything by yourself. This checklist/tookit is here to help you keep your head on straight."
+                  }
                 </div>
 
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__rlnHa
+                    sty.text__bw9Pg
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                    "we're on a misssion"
-                  ) : (
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {"A list of additional resources"}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
-                  )}
-                </div>
-
-                <div className={classNames(projectcss.all, sty.freeBox__lZkHe)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__snc2K
-                    )}
-                  >
-                    {
-                      "We don't have all the answers, and there are so many great resources online. So we've tried our best to consolidate some of the best ones :)"
-                    }
-                  </div>
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"A list of additional resources"}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </div>
 
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__dQDs
+                    sty.text__wlAxr
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                    "we're on a misssion"
-                  ) : (
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {"More questions? A group of mentors."}
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
-                  )}
+                  {
+                    "We don't have all the answers, and there are so many great resources online. So we've tried our best to consolidate some of the best ones :)"
+                  }
                 </div>
 
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___77V4E
+                    sty.text___4XFe2
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"More questions? A group of mentors."}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__i6UFe
                   )}
                 >
                   {
