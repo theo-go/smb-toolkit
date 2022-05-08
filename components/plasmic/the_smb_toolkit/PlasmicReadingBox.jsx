@@ -22,7 +22,12 @@ import sty from "./PlasmicReadingBox.module.css"; // plasmic-import: -2Xh8VfZof/
 
 export const PlasmicReadingBox__VariantProps = new Array();
 
-export const PlasmicReadingBox__ArgProps = new Array("title", "image", "link");
+export const PlasmicReadingBox__ArgProps = new Array(
+  "title",
+  "image",
+  "link",
+  "description"
+);
 
 function PlasmicReadingBox__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
@@ -44,6 +49,7 @@ function PlasmicReadingBox__RenderFunc(props) {
       component={Link}
       href={args.link}
       platform={"nextjs"}
+      target={"_blank"}
     >
       <div className={classNames(projectcss.all, sty.freeBox__rcX43)}>
         <p.PlasmicImg
@@ -83,13 +89,13 @@ function PlasmicReadingBox__RenderFunc(props) {
         <div
           data-plasmic-name={"description"}
           data-plasmic-override={overrides.description}
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.description
-          )}
+          className={classNames(projectcss.all, sty.description)}
         >
-          {"Loading..."}
+          {p.renderPlasmicSlot({
+            defaultContents: "Loading...",
+            value: args.description,
+            className: classNames(sty.slotTargetDescription)
+          })}
         </div>
       </div>
     </p.PlasmicLink>

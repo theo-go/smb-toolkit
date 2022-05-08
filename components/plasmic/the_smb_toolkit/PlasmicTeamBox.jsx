@@ -21,7 +21,11 @@ import sty from "./PlasmicTeamBox.module.css"; // plasmic-import: zSCV1taeld/css
 
 export const PlasmicTeamBox__VariantProps = new Array();
 
-export const PlasmicTeamBox__ArgProps = new Array("teamImg", "name");
+export const PlasmicTeamBox__ArgProps = new Array(
+  "teamImg",
+  "name",
+  "description"
+);
 
 function PlasmicTeamBox__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
@@ -47,7 +51,7 @@ function PlasmicTeamBox__RenderFunc(props) {
         className={classNames(sty.img)}
         displayHeight={"auto"}
         displayMaxHeight={"none"}
-        displayMaxWidth={"100%"}
+        displayMaxWidth={"90%"}
         displayMinHeight={"0"}
         displayMinWidth={"0"}
         displayWidth={"100%"}
@@ -79,13 +83,13 @@ function PlasmicTeamBox__RenderFunc(props) {
       <div
         data-plasmic-name={"description"}
         data-plasmic-override={overrides.description}
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.description
-        )}
+        className={classNames(projectcss.all, sty.description)}
       >
-        {"Loading..."}
+        {p.renderPlasmicSlot({
+          defaultContents: "Loading...",
+          value: args.description,
+          className: classNames(sty.slotTargetDescription)
+        })}
       </div>
     </div>
   );

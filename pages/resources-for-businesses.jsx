@@ -2,25 +2,47 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import { PlasmicResourcesForBusinesses } from "../components/plasmic/the_smb_toolkit/PlasmicResourcesForBusinesses";
+import { useEffect, useState } from "react";
+import ReadingBox from "../components/ReadingBox";
 
 function ResourcesForBusinesses() {
-  // Use PlasmicResourcesForBusinesses to render this component as it was
-  // designed in Plasmic, by activating the appropriate variants,
-  // attaching the appropriate event handlers, etc.  You
-  // can also install whatever React hooks you need here to manage state or
-  // fetch data.
-  //
-  // Props you can pass into PlasmicResourcesForBusinesses are:
-  // 1. Variants you want to activate,
-  // 2. Contents for slots you want to fill,
-  // 3. Overrides for any named node in the component to attach behavior and data,
-  // 4. Props to set on the root node.
-  //
-  // By default, PlasmicResourcesForBusinesses is wrapped by your project's global
-  // variant context providers. These wrappers may be moved to
-  // Next.js Custom App component
-  // (https://nextjs.org/docs/advanced-features/custom-app).
-  return <PlasmicResourcesForBusinesses />;
+
+  const [resources, setResources] = useState([]);
+
+  useEffect(() => {
+    var airtable_url = "https://api.airtable.com/v0/appSy47rJWGPi4t2m/Resources101?api_key=" + "key5t3q3H8TgvBOMs"
+    fetch(airtable_url)
+      .then((res) => res.json())
+      .then((resources) => {
+        setResources(resources);
+        console.log(resources);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+if (resources.records) {
+  return <PlasmicResourcesForBusinesses
+
+    resources={{
+      children: resources.records.map((item) => {
+        return (
+          <ReadingBox
+            link={item.fields.URL}
+            title={item.fields.Title.slice(0, 110)}
+            description={item.fields.Description}
+            image={item.fields.Image[0].url}
+          />
+        )
+      })
+    }}
+  />
 }
+return <PlasmicResourcesForBusinesses />
+}
+
+
+
 
 export default ResourcesForBusinesses;

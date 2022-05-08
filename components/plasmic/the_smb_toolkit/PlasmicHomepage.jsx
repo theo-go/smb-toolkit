@@ -239,7 +239,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.heroButton___7LjY3
                     )}
-                    link={"/investors/city"}
+                    link={"/cities-and-investors"}
                     slot={
                       <div
                         className={classNames(

@@ -12,10 +12,11 @@
 .img {
   position: relative;
   object-fit: contain;
-  max-width: 100%;
-  align-self: flex-start;
+  max-width: 90%;
+  align-self: center;
   width: 100%;
   height: auto;
+  margin-bottom: 15px;
   min-width: 0;
   border-radius: 100000px;
 }
@@ -38,15 +39,28 @@
   margin-bottom: 5px;
   display: flex;
   flex-direction: row;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
   min-width: 0;
 }
 .slotTargetName {
   font-weight: 900;
+  text-align: center;
 }
 .description {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
   min-width: 0;
+}
+.slotTargetDescription {
+  font-size: 12px;
+  text-align: center;
 }

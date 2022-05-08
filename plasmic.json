@@ -275,19 +275,6 @@
           "componentType": "page"
         },
         {
-          "id": "OHHOce9asx",
-          "name": "InvestorsCity",
-          "type": "managed",
-          "projectId": "vZXZgeU1YqYWghemcQX2Q1",
-          "renderModuleFilePath": "plasmic/the_smb_toolkit/PlasmicInvestorsCity.jsx",
-          "importSpec": {
-            "modulePath": "../pages/investors/city.jsx"
-          },
-          "cssFilePath": "plasmic/the_smb_toolkit/PlasmicInvestorsCity.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "nbjVFIWQ4wv",
           "name": "Checkbox",
           "type": "managed",
@@ -441,6 +428,19 @@
             "modulePath": "../pages/contact.jsx"
           },
           "cssFilePath": "plasmic/the_smb_toolkit/PlasmicContact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "OHHOce9asx",
+          "name": "InvestorsAndCity",
+          "type": "managed",
+          "projectId": "vZXZgeU1YqYWghemcQX2Q1",
+          "renderModuleFilePath": "plasmic/the_smb_toolkit/PlasmicInvestorsAndCity.jsx",
+          "importSpec": {
+            "modulePath": "../pages/cities-and-investors.jsx"
+          },
+          "cssFilePath": "plasmic/the_smb_toolkit/PlasmicInvestorsAndCity.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }

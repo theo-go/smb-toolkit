@@ -164,7 +164,7 @@ function PlasmicFooter__RenderFunc(props) {
 
             <FooterLinks
               className={classNames("__wab_instance", sty.footerLinks__gp0Tv)}
-              link={"/investors/city"}
+              link={"/cities-and-investors"}
             >
               {"For Cities & Investors"}
             </FooterLinks>

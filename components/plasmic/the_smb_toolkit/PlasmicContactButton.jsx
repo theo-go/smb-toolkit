@@ -19,7 +19,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_the_smb_toolkit.module.css"; // plasmic-import: vZXZgeU1YqYWghemcQX2Q1/projectcss
 import sty from "./PlasmicContactButton.module.css"; // plasmic-import: _PI7_BduYq/css
 
-export const PlasmicContactButton__VariantProps = new Array("unnamedVariant");
+export const PlasmicContactButton__VariantProps = new Array("subscribed");
 
 export const PlasmicContactButton__ArgProps = new Array();
 
@@ -27,31 +27,28 @@ function PlasmicContactButton__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
   const $props = props.args;
   return (
-    <div
+    <button
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
         projectcss.all,
+        projectcss.button,
         projectcss.__wab_text,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         sty.root,
         {
-          [sty.rootunnamedVariant]: hasVariant(
-            variants,
-            "unnamedVariant",
-            "unnamedVariant"
-          )
+          [sty.rootsubscribed]: hasVariant(variants, "subscribed", "subscribed")
         }
       )}
     >
-      {hasVariant(variants, "unnamedVariant", "unnamedVariant")
+      {hasVariant(variants, "subscribed", "subscribed")
         ? "Thanks so much! We'll be in touch soon!"
         : "Say hi! We'd love to hear what you're working on 😊"}
-    </div>
+    </button>
   );
 }
 

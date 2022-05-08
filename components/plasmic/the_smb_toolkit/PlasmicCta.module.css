@@ -318,6 +318,6 @@
   min-width: 0;
   padding: 8px;
 }
-.contactButton:global(.__wab_instance) {
+.blueContactButton:global(.__wab_instance) {
   position: relative;
 }

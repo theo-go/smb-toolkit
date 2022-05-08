@@ -46,6 +46,7 @@
   width: 1100px;
   height: auto;
   max-width: 100%;
+  margin-bottom: 100px;
   padding: 8px;
 }
 .text__yYsQs {
@@ -99,14 +100,14 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: stretch;
-  margin-left: calc(0px - 40px);
-  width: calc(100% + 40px);
+  margin-left: calc(0px - 80px);
+  width: calc(100% + 80px);
 }
 .columns > :global(.__wab_flex-container) > :nth-child(2n + 1) {
-  width: calc((100% - 2 * 40px) * 5 / 12);
+  width: calc((100% - 2 * 80px) * 5 / 12);
 }
 .columns > :global(.__wab_flex-container) > :nth-child(2n + 2) {
-  width: calc((100% - 2 * 40px) * 7 / 12);
+  width: calc((100% - 2 * 80px) * 7 / 12);
 }
 .columns > :global(.__wab_flex-container) > *,
 .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -116,7 +117,7 @@
   > :global(.__wab_slot)
   > picture
   > img {
-  margin-left: 40px;
+  margin-left: 80px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .columns {
@@ -220,6 +221,7 @@
   max-width: 800px;
   margin-bottom: 16px;
   align-self: center;
+  font-size: 12px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -263,6 +265,7 @@
   height: auto;
   max-width: 800px;
   margin-bottom: 16px;
+  font-size: 12px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -295,6 +298,7 @@
   height: auto;
   max-width: 800px;
   margin-bottom: 16px;
+  font-size: 12px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -339,6 +343,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  margin-top: 70px;
   min-width: 0;
   padding: 8px;
 }
@@ -361,7 +366,7 @@
   align-items: center;
   justify-content: center;
   height: auto;
-  max-width: 100%;
+  max-width: 1100px;
   padding: 8px;
 }
 .freeBox__v4G {
@@ -398,6 +403,8 @@
   align-items: stretch;
   align-content: flex-start;
   min-width: 0;
+  margin-left: calc(0px - 25px);
+  width: calc(100% + 25px);
   margin-top: calc(0px - 40px);
   height: calc(100% + 40px);
 }
@@ -409,6 +416,7 @@
   > :global(.__wab_slot)
   > picture
   > img {
+  margin-left: 25px;
   margin-top: 40px;
 }
 .img__ts3Gu {
@@ -462,7 +470,8 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  margin-top: 30px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   min-width: 0;
   padding: 8px;
 }
@@ -473,7 +482,7 @@
   max-width: 800px;
   margin-bottom: 16px;
   color: #535353;
-  font-size: 24px;
+  font-size: 16px;
   align-self: center;
   text-align: center;
   min-width: 0;
@@ -505,4 +514,5 @@
 }
 .footer:global(.__wab_instance) {
   position: relative;
+  margin-top: 80px;
 }

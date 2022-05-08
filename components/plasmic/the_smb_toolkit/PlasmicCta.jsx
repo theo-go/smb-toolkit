@@ -132,9 +132,9 @@ function PlasmicCta__RenderFunc(props) {
 
             <div className={classNames(projectcss.all, sty.freeBox__jMqv)}>
               <ContactButton
-                data-plasmic-name={"contactButton"}
-                data-plasmic-override={overrides.contactButton}
-                className={classNames("__wab_instance", sty.contactButton)}
+                data-plasmic-name={"blueContactButton"}
+                data-plasmic-override={overrides.blueContactButton}
+                className={classNames("__wab_instance", sty.blueContactButton)}
               />
             </div>
           </div>
@@ -153,7 +153,7 @@ const PlasmicDescendants = {
     "email",
     "companyName",
     "message",
-    "contactButton"
+    "blueContactButton"
   ],
 
   columns: [
@@ -163,7 +163,7 @@ const PlasmicDescendants = {
     "email",
     "companyName",
     "message",
-    "contactButton"
+    "blueContactButton"
   ],
 
   firstName: ["firstName"],
@@ -171,7 +171,7 @@ const PlasmicDescendants = {
   email: ["email"],
   companyName: ["companyName"],
   message: ["message"],
-  contactButton: ["contactButton"]
+  blueContactButton: ["blueContactButton"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -209,7 +209,7 @@ export const PlasmicCta = Object.assign(
     email: makeNodeComponent("email"),
     companyName: makeNodeComponent("companyName"),
     message: makeNodeComponent("message"),
-    contactButton: makeNodeComponent("contactButton"),
+    blueContactButton: makeNodeComponent("blueContactButton"),
     // Metadata about props expected for PlasmicCta
     internalVariantProps: PlasmicCta__VariantProps,
     internalArgProps: PlasmicCta__ArgProps

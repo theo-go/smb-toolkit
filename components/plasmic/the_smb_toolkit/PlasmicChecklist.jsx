@@ -105,7 +105,9 @@ function PlasmicChecklist__RenderFunc(props) {
                   sty.httpscodaiostackInputtheSmbChecklist3
                 )}
                 component={Link}
+                href={"https://coda.io/@stack-input/the-smb-checklist"}
                 platform={"nextjs"}
+                target={"_blank"}
               >
                 {"Access Checklist Here 🚀 "}
               </p.PlasmicLink>
@@ -388,18 +390,9 @@ function PlasmicChecklist__RenderFunc(props) {
                       sty.text___1HTdo
                     )}
                   >
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {
-                          "Get the toolkit you need to take your business to the next level!"
-                        }
-                      </span>
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
+                    {
+                      "We hope the checklist is helpful! \nPlease message us if you have topics you want covered on the checklist!"
+                    }
                   </div>
 
                   <p.PlasmicLink
@@ -414,7 +407,9 @@ function PlasmicChecklist__RenderFunc(props) {
                       sty.httpscodaiostackInputtheSmbChecklist2
                     )}
                     component={Link}
+                    href={"https://coda.io/@stack-input/the-smb-checklist"}
                     platform={"nextjs"}
+                    target={"_blank"}
                   >
                     {"Access the Checklist Here 🚀 "}
                   </p.PlasmicLink>
