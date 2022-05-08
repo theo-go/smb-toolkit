@@ -12,6 +12,7 @@ import * as React from "react";
 import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -85,59 +86,65 @@ function PlasmicHomepage__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__zW3Kd)}
               >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__nj8FU
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>{""}</React.Fragment>
-                    <h1
-                      data-plasmic-name={"h1"}
-                      data-plasmic-override={overrides.h1}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1
-                      )}
-                    >
-                      <React.Fragment>
-                        <React.Fragment>{""}</React.Fragment>
-                        <h3
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h3,
-                            projectcss.__wab_text,
-                            sty.h3__qsa5
-                          )}
-                        >
-                          <React.Fragment>
-                            <React.Fragment>{""}</React.Fragment>
-                            <h2
-                              data-plasmic-name={"h2"}
-                              data-plasmic-override={overrides.h2}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.h2,
-                                projectcss.__wab_text,
-                                sty.h2
-                              )}
-                            >
-                              {
-                                "If you have the vision,\nLet us give you the tools."
-                              }
-                            </h2>
-                            <React.Fragment>{""}</React.Fragment>
-                          </React.Fragment>
-                        </h3>
-                        <React.Fragment>{""}</React.Fragment>
-                      </React.Fragment>
-                    </h1>
-                    <React.Fragment>{""}</React.Fragment>
-                  </React.Fragment>
+                <div className={classNames(projectcss.all, sty.freeBox__dI66E)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___6181)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100px"
+                        : "100%"
+                    }
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "100px"
+                    }
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/the_smb_toolkit/images/lightbulbpng.png",
+                      fullWidth: 446,
+                      fullHeight: 504,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__wPWy7
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{"If you have "}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#577EF5", fontWeight: 700 }}
+                      >
+                        {"the vision,"}
+                      </span>
+                      <React.Fragment>{"\nLet us give you "}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#577EF5" }}
+                      >
+                        {"t"}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#577EF5", fontWeight: 700 }}
+                      >
+                        {"he tools."}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
+                    </React.Fragment>
+                  </div>
                 </div>
 
                 <div
@@ -525,10 +532,8 @@ function PlasmicHomepage__RenderFunc(props) {
               >
                 <div className={classNames(projectcss.all, sty.column__acq6H)}>
                   <p.PlasmicImg
-                    data-plasmic-name={"img"}
-                    data-plasmic-override={overrides.img}
                     alt={""}
-                    className={classNames(sty.img)}
+                    className={classNames(sty.img__e2RrX)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -586,11 +591,13 @@ function PlasmicHomepage__RenderFunc(props) {
                 <React.Fragment>
                   <React.Fragment>{""}</React.Fragment>
                   <h3
+                    data-plasmic-name={"h3"}
+                    data-plasmic-override={overrides.h3}
                     className={classNames(
                       projectcss.all,
                       projectcss.h3,
                       projectcss.__wab_text,
-                      sty.h3__z4Iuy
+                      sty.h3
                     )}
                   >
                     {"What will you up your game on today?"}
@@ -658,40 +665,36 @@ const PlasmicDescendants = {
     "navAndHero",
     "navbar",
     "hero",
-    "h1",
-    "h2",
     "factsAboutBusinesses",
     "link",
     "restOfPage",
     "checklistDemo",
     "columns",
-    "img",
     "topicsToLearn",
+    "h3",
     "cta",
     "footer"
   ],
 
-  navAndHero: ["navAndHero", "navbar", "hero", "h1", "h2"],
+  navAndHero: ["navAndHero", "navbar", "hero"],
   navbar: ["navbar"],
-  hero: ["hero", "h1", "h2"],
-  h1: ["h1", "h2"],
-  h2: ["h2"],
+  hero: ["hero"],
   factsAboutBusinesses: ["factsAboutBusinesses", "link"],
   link: ["link"],
   restOfPage: [
     "restOfPage",
     "checklistDemo",
     "columns",
-    "img",
     "topicsToLearn",
+    "h3",
     "cta",
     "footer"
   ],
 
-  checklistDemo: ["checklistDemo", "columns", "img"],
-  columns: ["columns", "img"],
-  img: ["img"],
-  topicsToLearn: ["topicsToLearn"],
+  checklistDemo: ["checklistDemo", "columns"],
+  columns: ["columns"],
+  topicsToLearn: ["topicsToLearn", "h3"],
+  h3: ["h3"],
   cta: ["cta"],
   footer: ["footer"]
 };
@@ -728,15 +731,13 @@ export const PlasmicHomepage = Object.assign(
     navAndHero: makeNodeComponent("navAndHero"),
     navbar: makeNodeComponent("navbar"),
     hero: makeNodeComponent("hero"),
-    h1: makeNodeComponent("h1"),
-    h2: makeNodeComponent("h2"),
     factsAboutBusinesses: makeNodeComponent("factsAboutBusinesses"),
     link: makeNodeComponent("link"),
     restOfPage: makeNodeComponent("restOfPage"),
     checklistDemo: makeNodeComponent("checklistDemo"),
     columns: makeNodeComponent("columns"),
-    img: makeNodeComponent("img"),
     topicsToLearn: makeNodeComponent("topicsToLearn"),
+    h3: makeNodeComponent("h3"),
     cta: makeNodeComponent("cta"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage

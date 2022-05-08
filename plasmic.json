@@ -480,6 +480,16 @@
           "id": "D86HjSbWz0",
           "name": "NounMarketing4781749SvgIcon",
           "moduleFilePath": "plasmic/the_smb_toolkit/icons/PlasmicIcon__NounMarketing4781749Svg.jsx"
+        },
+        {
+          "id": "h7RMyNZ9FM",
+          "name": "NounLightbulb1262998SvgIcon",
+          "moduleFilePath": "plasmic/the_smb_toolkit/icons/PlasmicIcon__NounLightbulb1262998Svg.jsx"
+        },
+        {
+          "id": "AMugwRX39U",
+          "name": "LightbulbsvgIcon",
+          "moduleFilePath": "plasmic/the_smb_toolkit/icons/PlasmicIcon__Lightbulbsvg.jsx"
         }
       ],
       "images": [
@@ -567,6 +577,11 @@
           "id": "I-eamCB-s",
           "name": "photo_2022-04-30_14-31-31 2.png",
           "filePath": "../public/plasmic/the_smb_toolkit/images/photo202204301431312Png.png"
+        },
+        {
+          "id": "GIcz0DhxW",
+          "name": "lightbulb.png",
+          "filePath": "../public/plasmic/the_smb_toolkit/images/lightbulbpng.png"
         }
       ],
       "indirect": false,
